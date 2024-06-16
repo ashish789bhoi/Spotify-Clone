@@ -5,7 +5,6 @@ body{font-family: 'Montserrat', sans-serif;
      overflow:hidden;
      display: flex;
      flex-direction: column;
-
     }
 
 .main{
@@ -21,8 +20,12 @@ body{font-family: 'Montserrat', sans-serif;
     border-radius: 1rem ;
     margin: 0 0.5rem 0 0.5rem; 
     overflow: auto;
-
 }
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
 .main-content{
     background-color: #121212;
     /* means give the all remaining space to it */
@@ -30,8 +33,13 @@ body{font-family: 'Montserrat', sans-serif;
     border-radius: 1rem ;
     overflow: auto;
     /* padding: 0 1.5rem 0 1.5rem; */
-    
 }
+
+.main-content::-webkit-scrollbar{
+    display: none;
+}
+
+
 .music-player{
     background-color: black;
     position: fixed;
@@ -301,5 +309,10 @@ a{
         height: 60px;
         margin-bottom: 3rem;
     }
+    .sidebar{
+        height: auto;
+    }
 }
+
+
 
